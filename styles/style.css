@@ -1,0 +1,486 @@
+body{
+    margin:0 auto;
+    padding: 0 auto;
+    width: 100vw;
+}
+@import url('https://fonts.cdnfonts.com/css/rubik');
+.mainsection{
+    background: url("../images/background-1.png");
+    background-size: 100%; /* Изначально задаем 100% */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Фон будет оставаться на месте при скроллировании */
+    width: 100vw;
+    height: 1019px;
+}
+header{
+    height: 84px;
+    display: flex;
+    position: absolute;
+}
+h2.logo{
+    color: #292D32;
+text-align: center;
+font-family: Rubik;
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-left: 82px;
+margin-top: 46px;
+}
+.right-menu{
+    margin-left:387px;
+    height: 19px;
+    display: flex;
+    justify-content: center;
+    margin-top: 46px;
+}
+ul{
+    display: flex;
+}
+li{
+    margin-left:58px;
+    list-style-type: none;
+}
+a.rightmenu {
+    text-decoration: none;
+        color: #292D32;
+text-align: right;
+font-family: Rubik;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-decoration: none;
+}
+h1{
+    color: #292D32;
+text-align: center;
+font-family: Rubik;
+font-size: 68px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.header {
+    display: flex;
+}
+p{
+    color: #292D32;
+text-align: center;
+font-family: Rubik;
+font-size: 24px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+.google-btn{
+    margin: 0 auto;
+}
+.center-container {
+    display: flex;
+    justify-content: center; /* Горизонтальное выравнивание по центру */
+    align-items: center; /* Вертикальное выравнивание по центру */
+    margin-top: 45px;
+}
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100vw; /* Ограничение ширины для примера */
+    margin: 0 auto;
+    margin-top: 42px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+.slider-step {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slider img {
+    width: 100%;
+    height: 500px;
+}
+.slider-step img {
+    width: 100%;
+    height: 500px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.pagination button {
+    background: none;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.pagination-step {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.pagination-step button {
+    background: none;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #555;
+}
+h3.ourproduct{
+    color: #292D32;
+    margin: 0 auto;
+    margin-bottom: 42px;
+text-align: center;
+font-family: Rubik;
+font-size: 38px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 125px;
+}
+.videoplay {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+    justify-content: center;
+    align-items: center;
+}
+iframe.videoplayer{
+    border-radius:28px;
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.video-preview {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* Соотношение сторон 16:9 для видео */
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background: url('play-button.png') no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.videoplayer {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: none;
+    height: 600px;
+}
+.box {
+    border-radius: 14px;
+    position: relative;
+    display: inline-flex;
+    background: #71357C;
+    width: 59px;
+    height: 56.523px;
+}
+.additional-left{
+    width: 50%;
+height: 644.451px;
+}
+.additional-right{
+    width: 50%;
+height: 644.451px;
+margin-top: 167px;
+}
+.additionalbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: center;
+}
+.rows{
+    margin-left: 119px;
+}
+.whitetextbox {
+    color: #FFF;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* padding: 9px 21px 8px 21px; */
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.box.step{
+    background: #95D0D5;
+}
+.box.third{
+    background: #FD7E50;
+}
+.box.four{
+    background: #F35D5D;
+}
+p.top{
+    color: #292D32;
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 auto;
+}
+p.down{
+    color: rgba(41, 45, 50, 0.80);
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0 auto;
+}
+.boxtext {
+    display: inline-block;
+    margin-left: 33px;
+}
+.rows.top{
+    margin-top: 61px;
+}
+.overview{
+    display: inline-flex;
+}
+.col-md-6{
+    width: 45%;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+h3.overview{
+    color: #292D32;
+font-family: Rubik;
+font-size: 38px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+p.overview-text{
+    color: rgba(41, 45, 50, 0.80);
+font-family: Rubik;
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+text-align: left;
+}
+p.learnmore{
+    color: #292D32;
+text-align: center;
+font-family: Rubik;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-align: left;
+margin-right: 30px;
+}
+.learn-more {
+    display: inline-flex;
+    cursor: pointer;
+}
+.downloadapp{
+    height: 205.014px;
+    padding: 40px 80px 55px 80px;
+    background: url("../images/bgdownload.jpg");
+    background-size: cover;
+}
+p.downloadapptext{
+    color: #292D32;
+font-family: Rubik;
+font-size: 38px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-align: left;
+}
+p.downloadtextstep{
+    color: rgba(41, 45, 50, 0.80);
+font-family: Rubik;
+font-size: 24px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+text-align: left;
+}
+.googlebtndownload {
+    display: inline-flex;
+    margin-left: 300px;
+}
+.downloadtext {
+    display: inline-block;
+}
+.more-icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.more-icon.rotate {
+    transform: rotate(180deg);
+}
+.contact {
+    padding-left: 80px;
+    display: inline-flex;
+}
+h3.textreview{
+    color: #292D32;
+font-family: Rubik;
+font-size: 28px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-align: left;
+}
+p.form{
+    color: rgba(41, 45, 50, 0.70);
+font-family: Rubik;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-align: left;
+}
+input{
+    padding-left: 20px;
+    padding-top: 16px;
+    padding-bottom: 17px;
+    padding-left: 19px;
+    border: 0px solid;
+    outline:none;
+}
+textarea{
+    border: 0px;
+    outline: none;
+    color: rgba(41, 45, 50, 0.40);
+    font-family: Rubik;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+button.submit{
+    display: block;
+padding: 14px 43px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+color: white;
+border: 0px;
+background: #F35D5D;
+width: 368px;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+p.formright{
+    text-align: left;
+    color: #292D32;
+    font-family: Rubik;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+p.formdown{
+    color: rgba(41, 45, 50, 0.80);
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: left;
+}
+.col-md-4{
+    width: 368px;
+}
+.col-md-7{
+    width: 85%;
+    margin-left: 55%;
+}
+.footer{
+    margin-left:80px;
+    margin-right: 80px;
+}
+li.social{
+    margin-left: 18px;
+}
+p.footertext{
+    color: #292D32;
+font-family: Rubik;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: 120%; /* 16.8px */
+text-align: left;
+margin-left: 59px;
+}
+a.footer-right {
+    text-decoration: none;
+    color: #292D32;
+    font-family: Rubik;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+}
+.footer-down {
+    display: inline-flex;
+}
+ul.footer-righttext{
+    margin-left: 742px;
+}
