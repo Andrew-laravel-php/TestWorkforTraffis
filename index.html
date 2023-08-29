@@ -14,7 +14,7 @@
                 LOGO HERE!
             </h2>
             <div class="right-menu">
-                <ul>
+                <ul class="header-right">
                     <li>
                         <a href="#main" class="rightmenu">Main</a>
                     </li>
@@ -34,9 +34,35 @@
                         <a href="#contacts" class="rightmenu">Contacts</a>
                     </li>
                 </ul>
+                <ul class="right-menu-tablet">
+                    <li class="burger" id="burger">
+                        <img src="./images/burger.svg" alt="burger">
+                    </li>
+                </ul>
+                <ul class="tablet-menu" style="display: none;">
+                    <li>
+                        <a href="#main" class="rightmenu">Main</a>
+                    </li>
+                    <li>
+                        <a href="#aboutus" class="rightmenu">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#features" class="rightmenu">Features</a>
+                    </li>
+                    <li>
+                        <a href="#screenshots" class="rightmenu">Screenshots</a>
+                    </li>
+                    <li>
+                        <a href="#process" class="rightmenu">Process</a>
+                    </li>
+                    <li>
+                        <a href="#contacts" class="rightmenu">Contacts</a>
+                    </li>
+                    <img src="./images/close.svg" id="close" class="close" alt="close-btn">
+                </ul>
             </div>
     </div>
-        <h1>The Name Of The Product</h1>
+        <h1 id="main">The Name Of The Product</h1>
         <p>Practice solving your puzzle as fast as possible with random <br>shuffling and a timer with full statistics</p>
         <div class="center-container">
             <a href="https://google.com" target="_blank" class="google-btn">
@@ -63,7 +89,7 @@
          <!-- SLIDER END -->
     </div>
     <!-- PRODUCT SECTION START -->
-    <div class="product-section">
+    <div class="product-section" id="aboutus">
         <h3 class="ourproduct">
             What is new in our product
         </h3>
@@ -78,12 +104,12 @@
 
     <!-- ADDITIONAL INFORMATION START -->
     <div class="additional-information">
-            <h3 class="ourproduct">
+            <h3 class="ourproduct step">
                 Additional app information
             </h3>
     <div class="additionalbox">
         <div class="additional-left">
-            <img src="./images/svggroup.svg" style="padding-top:38px;" alt="groupsvg" srcset="">
+            <img src="./images/svggroup.svg" class="tabletimgfullhd" style="padding-top:38px;" alt="groupsvg" srcset="">
         </div>
         <div class="additional-right">
             <div class="rows">
@@ -239,7 +265,8 @@ This application needs internet access to get the solution.
             <p class="formdown">
                 Give us a call or email anytime, we strive to answer all <br>inquiries within 24 hours on business days.
             </p>
-            <img src="./images/bgcontact.svg" alt="bgcontact">
+            <img src="./images/bgcontact.svg" class="bgcontact desktop" alt="bgcontact desktop">
+            <img src="./images/background-tablet-contact.svg" class="bgcontact" alt="bgcontact tablet">
         </div>
     </div>
     <!-- CONTACT END -->
@@ -290,4 +317,5 @@ This application needs internet access to get the solution.
 <script src="./js/hideshow.js"></script>
 <script src="./js/form.js"></script>
 <script src="./js/getyear.js"></script>
+<script src="./js/tablet.js"></script>
 </html>

@@ -393,6 +393,7 @@ input{
     padding-left: 19px;
     border: 0px solid;
     outline:none;
+    background: #F4F4F4;
 }
 textarea{
     border: 0px;
@@ -483,4 +484,243 @@ a.footer-right {
 }
 ul.footer-righttext{
     margin-left: 742px;
+}
+.burger{
+    display: none;
+}
+.bgcontact{
+    display: none;
+}
+.bgcontact.desktop{
+    display: block;
+}
+/* TABLET ADAPTIVE */
+
+@media screen and (max-width:1400px){
+    ul.header-right{
+        display: none;
+    }
+    .bgcontact.desktop{
+        display: none;
+    }
+    .bgcontact{
+        display: block;
+    }
+    .contact{
+        display:flex;
+    }
+    .overview{
+        display:block;
+    }
+    .additionalbox{
+        display:block;
+    }
+    .col-md-7{
+        margin-left: 24px;
+    }
+    .burger{
+        display: block;
+        margin-top: -10px;
+        margin-left: 300px;
+    }
+    ul.tablet-menu {
+        position: absolute;
+        background: white;
+        width: 100vw;
+        left: 0;
+        top: 0;
+        height: 365px;
+        margin: 0 auto;
+        z-index: 99999;
+        display: block;
+        overflow: hidden;
+        -webkit-transition: max-height 0.4s linear;
+        -moz-transition: max-height 0.4s linear;
+        transition: max-height 0.4s linear;
+    }
+    a.rightmenu {
+        text-decoration: none;
+        color: #292D32;
+        text-align: right;
+        font-family: Rubik;
+        font-size: 29px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 59px;
+        text-decoration: none;
+    }
+    img#close {
+        position: absolute;
+        top: 18px;
+        left: 768px;
+    }
+    .additional-right{
+        flex: 1;
+        margin-top: 55px;
+    }
+    .additional-left{
+        flex: 2;
+    }
+    .rows{
+        margin-left: 44px;
+    }
+    h3.ourproduct.step{
+        text-align: left;
+        margin-left: 24px;
+    }
+    .additionalbox {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    .col-md-6 {
+        width: 100vw;
+        padding: 0;
+    }
+    p.learnmore{
+        color: #F35D5D;
+    }
+    h1{
+        font-size: 48px;
+    }
+    h3.ourproduct{
+        font-size: 28px;
+    }
+    p.top {
+        color: #292D32;
+        font-family: Rubik;
+        font-size: 24px;
+        font-style: normal;
+        text-align: left;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0 auto;
+    }
+    .tabletimgfullhd{
+        width: 100vw;
+    }
+    h3.overview {
+        font-size: 28px;
+        margin-left: 24px;
+    }
+    p.overview-text {
+        margin-left: 24px;
+        color: rgba(41, 45, 50, 0.80);
+        font-family: Rubik;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        text-align: left;
+    }
+    .learn-more {
+        display: inline-flex;
+        cursor: pointer;
+        margin-left: 24px;
+    }
+    .googlebtndownload {
+        margin-left: 136px;
+    }
+    ul.footer-righttext {
+        margin-left: 155px;
+    }
+}
+/* ADAPTIVE MOBILE */
+@media screen and (max-width:480px){
+    .right-menu {
+        margin-left: -272px;
+        height: 19px;
+        display: flex;
+        justify-content: center;
+        margin-top: 46px;
+    }
+    h1{
+        font-weight: 700;
+    }
+    .contact{
+        display: block;
+    }
+    img.bgcontact {
+        display: none;
+    }
+    button.submit {
+        display: block;
+        padding: 14px 43px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: white;
+        border: 0px;
+        background: #F35D5D;
+        width: 100%;
+    }
+    ul.footer-righttext {
+        margin-left: 0px;
+    }
+    .contact{
+        padding-left: 17px;
+    }
+    .footer {
+        margin-left: -17px;
+        
+    }
+    img#close {
+        position: absolute;
+        top: 18px;
+        left: 335px;
+    }
+    li {
+        margin-left: 2px;
+        list-style-type: none;
+    }
+    .video-preview {
+        transform: scale(0.9);
+    }
+    .rows {
+        width: 88vw;
+    }
+    p.top{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    p.down {
+        color: rgba(41, 45, 50, 0.80);
+        font-family: Rubik;
+        font-size: 20px;
+        font-style: normal;
+        text-align: left;
+        font-weight: 300;
+        width: 246px;
+        line-height: normal;
+        margin: 0 auto;
+    }
+    .downloadapp {
+        height: 327px;
+        padding: 21px;
+        background: url("../images/bgdownload.jpg");
+        background-size: cover;
+    }
+    p.downloadapptext{
+        color: #0D152C;
+        text-align: center;
+        font-family: Rubik;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    p.downloadtextstep{
+        text-align: center;
+        color: rgba(13, 21, 44, 0.80);
+        text-align: center;
+        font-family: Rubik;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .googlebtndownload {
+        margin-left: 25px;
+        margin-top: 30px;
+    }
 }
