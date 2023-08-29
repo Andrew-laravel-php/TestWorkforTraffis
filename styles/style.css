@@ -449,9 +449,9 @@ p.formdown{
 .col-md-4{
     width: 368px;
 }
-.col-md-7{
+.col-md-7 {
     width: 85%;
-    margin-left: 55%;
+    margin-left: 178px;
 }
 .footer{
     margin-left:80px;
@@ -491,7 +491,8 @@ ul.footer-righttext{
 .bgcontact{
     display: none;
 }
-.bgcontact.desktop{
+.bgcontact.desktop {
+    margin-left: 137px;
     display: block;
 }
 /* TABLET ADAPTIVE */
@@ -518,10 +519,10 @@ ul.footer-righttext{
     .col-md-7{
         margin-left: 24px;
     }
-    .burger{
+    .burger {
         display: block;
-        margin-top: -10px;
-        margin-left: 300px;
+        margin-top: -22px;
+        margin-left: 233px;
     }
     ul.tablet-menu {
         position: absolute;
@@ -628,11 +629,11 @@ ul.footer-righttext{
 /* ADAPTIVE MOBILE */
 @media screen and (max-width:480px){
     .right-menu {
-        margin-left: -272px;
-        height: 19px;
+        margin-left: -223px;
+        height: 52px;
         display: flex;
         justify-content: center;
-        margin-top: 46px;
+        margin-top: 60px;
     }
     h1{
         font-weight: 700;
